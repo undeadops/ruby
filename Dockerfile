@@ -19,13 +19,12 @@ RUN set -ex \
 	\
 	&& buildDeps=' \
 		bison \
-        netcat-traditional \
-        curl \
 		dpkg-dev \
 		libgdbm-dev \
 		ruby \
 	' \
 	&& apt-get update \
+    && apt-get install -y netcat-traditional curl
 	&& apt-get install -y --no-install-recommends $buildDeps \
 	&& rm -rf /var/lib/apt/lists/* \
 	\
