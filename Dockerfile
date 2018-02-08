@@ -19,7 +19,7 @@ RUN set -ex \
 	\
 	&& buildDeps=' \
 		bison \
-        netcat \
+        netcat-traditional \
         curl \
 		dpkg-dev \
 		libgdbm-dev \
