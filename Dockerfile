@@ -19,6 +19,8 @@ RUN set -ex \
 	\
 	&& buildDeps=' \
 		bison \
+        netcat \
+        curl \
 		dpkg-dev \
 		libgdbm-dev \
 		ruby \
